@@ -1,29 +1,68 @@
-<!-- This is a base template of a proper HTML5 page, please modify and update to meet the requirments of the week 1 lab -->
-<!-- Feel free to add addtional style sheets either here or in css folder -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WDD221 Assignmnet 1 Template</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
+    <title>Assignments Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-image: url('pinkflowers.jpg');
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            font-size: 1.5em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        h1 {
+            color: #414141;
+        }
+        h2 {
+            color: #585858;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .assignment-link {
+            display: block;
+            margin: 1em 0;
+            padding: 1em;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .assignment-link:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SPRING 2024 Web Dev w/ JavaScript Assignments Portal</h1>
+        <h2>Nikita Keirns Dashboard</h2>
+    </header>
+
     <main>
-        <h1>Welcome to My Website</h1>  
+
+        <a href="assignment1.html" class="assignment-link">
+            <h2>Week 1 Lab</h2>
+        </a>
+
     </main>
-    <div>
-        XXXXXXXXX
-    </div>
-	<script src="./js/index.js"></script>
-  <script>
-    var name = prompt("What is your name?");
-    var num = prompt("How many times should I write your name?");
-    for ( var n = 1; n <= num ; n++ ) {
-      document.write( name + " ");
-}
-  </script>
-  </body>
+</body>
 </html>
