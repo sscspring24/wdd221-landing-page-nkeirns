@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Array Page</title>
+<style>
+body {background-image: url('brightpinkflower.jpg');
+background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+    background-color: rgb(230, 176, 185);}
+h1   {color: rgb(99, 39, 54);}
+p    {color: rgba(11, 47, 63, 0.87);}
+</style>
+<script>
+    let colorArray = new Array();
+    colorArray[0] = "Pink";
+    colorArray[1] = "White";
+    colorArray[2] = "Black";
+    colorArray[3] = "Red";
+    colorArray[4] = "Gray";
+    colorArray[5] = "Maroon";
+
+    let counter1 = 0;
+    document.write("<h1>Elements of my Colors Array</h1>");
+    for (counter1 = 0;
+            counter1<colorArray.length;
+            counter1++)
+            document.write(colorArray[counter1] + "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html> 
